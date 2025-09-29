@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\cours\POO\TP0\bin\Debug\TP0.exe.config
+C:\Users\admin\Desktop\cours\POO\TP0\bin\Debug\TP0.exe
+C:\Users\admin\Desktop\cours\POO\TP0\bin\Debug\TP0.pdb
+C:\Users\admin\Desktop\cours\POO\TP0\obj\Debug\TP0_Kremser_Gaetan.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\cours\POO\TP0\obj\Debug\TP0_Kremser_Gaetan.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\cours\POO\TP0\obj\Debug\TP0.exe
+C:\Users\admin\Desktop\cours\POO\TP0\obj\Debug\TP0.pdb
