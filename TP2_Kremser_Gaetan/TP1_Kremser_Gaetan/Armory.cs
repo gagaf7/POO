@@ -69,17 +69,14 @@ namespace TP2_Kremser_Gaetan
 
         public Weapon GetWeaponByName(string weaponName)
         {
-            while (true)
+            foreach (Weapon weapon in weapons)
             {
-                foreach (Weapon weapon in weapons)
+                if (weaponName == weapon.name)
                 {
-                    if (weaponName == weapon.name)
-                    {
-                        return weapon;
-                    }
+                    return weapon;
                 }
             }
-               
+            throw new ArgumentException($"Weapon '{weaponName}' not found in armory");
         }
     }
 }

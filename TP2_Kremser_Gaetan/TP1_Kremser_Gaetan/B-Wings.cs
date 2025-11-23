@@ -11,8 +11,10 @@ namespace TP2_Kremser_Gaetan
         public B_Wings(double structure, double shield) : base(structure, shield)
         {
             name = "B-Wings";
-            structure = 30;
-            shield = 0;
+            maxStructure = 30;
+            maxShield = 0;
+            currentStructure = 30;
+            currentShield = 0;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Hammer"));
         }
 
@@ -21,6 +23,8 @@ namespace TP2_Kremser_Gaetan
             name = "B-Wings";
             maxStructure = 30;
             maxShield = 0;
+            currentStructure = 30;
+            currentShield = 0;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Hammer"));
         }
 

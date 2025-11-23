@@ -12,25 +12,29 @@ namespace TP2_Kremser_Gaetan
         public F_18(double structure, double shield) : base(structure, shield)
         {
             name = "F-18";
-            structure = 15;
-            shield = 0;
+            maxStructure = 15;
+            maxShield = 0;
+            currentStructure = 15;
+            currentShield = 0;
         }
         public F_18() : base()
         {
             name = "F-18";
             maxStructure = 15;
             maxShield = 0;
+            currentStructure = 15;
+            currentShield = 0;
         }
         public void UseAbility(List<Spaceship> spaceships)
         {
             if (spaceships.Contains(this))
             {
                 int index = spaceships.IndexOf(this);
-                if(spaceships.IndexOf(this) == index - 1)
+                if(index > 0)
                 {
                     spaceships[index - 1].setCurrentStructure(spaceships[index - 1].getCurrentStructure() - 10);
                 }
-                if (spaceships.IndexOf(this) == index + 1)
+                if (index < spaceships.Count - 1)
                 {
                     spaceships[index + 1].setCurrentStructure(spaceships[index + 1].getCurrentStructure() - 10);
                 }
