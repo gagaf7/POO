@@ -11,8 +11,10 @@ namespace TP2_Kremser_Gaetan
         public ViperMKII(double structure, double shield) : base(structure, shield)
         {
             name = "Viper MK II";
-            structure = 10;
-            shield = 15;
+            maxStructure = 10;
+            maxShield = 15;
+            currentStructure = 10;
+            currentShield = 15;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Mitrailleuse"));
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("EMG"));
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Missile"));

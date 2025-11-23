@@ -11,8 +11,10 @@ namespace TP2_Kremser_Gaetan
         public Dart(double structure, double shield) : base(structure, shield)
         {
             name = "Dart";
-            structure = 10;
-            shield = 3;
+            maxStructure = 10;
+            maxShield = 3;
+            currentStructure = 10;
+            currentShield = 3;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Laser"));
 
         }

@@ -11,8 +11,10 @@ namespace TP2_Kremser_Gaetan
         public Rocinante(double structure, double shield) : base(structure, shield)
         {
             name = "Rocinante";
-            structure = 3;
-            shield = 5;
+            maxStructure = 3;
+            maxShield = 5;
+            currentStructure = 3;
+            currentShield = 5;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Torpille"));
         }
         public Rocinante() : base()
@@ -27,7 +29,7 @@ namespace TP2_Kremser_Gaetan
         {
             Random rand = new Random();
             double remainingDamages;
-            if(rand.Next(1,2) == 1)
+            if(rand.Next(0,2) == 0)
             {
                 totalDamages = 0;
                 remainingDamages = 0;

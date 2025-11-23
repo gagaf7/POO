@@ -11,8 +11,10 @@ namespace TP2_Kremser_Gaetan
         public Tardis(double structure, double shield) : base(structure, shield)
         {
             name = "Tardis";
-            structure = 1;
-            shield = 0;
+            maxStructure = 1;
+            maxShield = 0;
+            currentStructure = 1;
+            currentShield = 0;
             SpaceshipWeapons.Capacity = 0;
         }
         public Tardis() : base()
@@ -24,16 +26,18 @@ namespace TP2_Kremser_Gaetan
         }
         public void UseAbility(List<Spaceship> spaceships)
         {
-            Random randIndexSelection = new Random();
-            Random randIndexPlacement = new Random();
-            int indexSelection = randIndexSelection.Next(0, spaceships.Count);
-            int indexPlacement = randIndexPlacement.Next(0, spaceships.Count);
-            Spaceship selectedShip = spaceships[indexSelection];
-            Spaceship placementShip = spaceships[indexPlacement];
-            spaceships.RemoveAt(indexSelection);
-            spaceships.RemoveAt(indexPlacement);
-            spaceships.Insert(indexSelection, placementShip);
-            spaceships.Insert(indexPlacement, selectedShip);
+            if (spaceships.Count < 2) return;
+            
+            Random rand = new Random();
+            int index1 = rand.Next(0, spaceships.Count);
+            int index2 = rand.Next(0, spaceships.Count);
+            
+            if (index1 != index2)
+            {
+                Spaceship temp = spaceships[index1];
+                spaceships[index1] = spaceships[index2];
+                spaceships[index2] = temp;
+            }
         }
     }
 }

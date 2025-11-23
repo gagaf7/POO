@@ -96,7 +96,7 @@ namespace TP2_Kremser_Gaetan
         public void ViewShip()
         {
             Console.WriteLine($" Structure max : {maxStructure} \n Structure actuelle : {currentStructure} \n Boucliers max : {maxShield} \n" +
-                $" Boucliers actuels : {currentShield} \n Vaisseau détruit : {isDestroyed} \n");
+                $" Boucliers actuels : {currentShield} \n Vaisseau détruit : {!isAlive} \n");
             Console.WriteLine(" - Liste des armes : \n");
             ViewWeapons();
         }
