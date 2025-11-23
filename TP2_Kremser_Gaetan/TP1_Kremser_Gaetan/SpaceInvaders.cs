@@ -94,13 +94,14 @@ namespace TP2_Kremser_Gaetan
             }
 
             // Player attacks random enemy with weighted probability
+            // Specification: [1/n, 2/n, 3/n, ...] chance for each position
             List<Spaceship> activeEnemies = enemies.Where(s => s.getCurrentStructure() > 0).ToList();
             if (activeEnemies.Count == 0)
             {
                 return;
             }
 
-            // Weighted random: [1/n, 2/n, 3/n, ...] chance for each position
+            // Weighted random: sum of arithmetic sequence 1+2+3+...+n = n*(n+1)/2
             int n = activeEnemies.Count;
             double totalWeight = n * (n + 1) / 2.0;
             double randomValue = rand.NextDouble() * totalWeight;
