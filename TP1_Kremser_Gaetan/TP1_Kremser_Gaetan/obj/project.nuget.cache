@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i7snPhBvldQ=",
+  "dgSpecHash": "YvZVEnyVtCc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\cours\\POO\\TP1\\TP1_Kremser_Gaetan\\TP1_Kremser_Gaetan\\TP1_Kremser_Gaetan.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/runner/work/POO/POO/TP1_Kremser_Gaetan/TP1_Kremser_Gaetan/TP1_Kremser_Gaetan.csproj",
+  "expectedPackageFiles": [
+    "/home/runner/work/POO/.codeql-scratch/dbs/csharp/working/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/runner/work/POO/.codeql-scratch/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/runner/work/POO/.codeql-scratch/dbs/csharp/working/packages/microsoft.netcore.app.host.linux-x64/8.0.22/microsoft.netcore.app.host.linux-x64.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }
