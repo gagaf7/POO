@@ -26,8 +26,7 @@ namespace TP2_Kremser_Gaetan
                 new Tardis(),
                 new Rocinante(),
                 new Dart(),
-                new F_18(),
-                new ViperMKII()
+                new F_18()
             };
 
             // Add weapons to some enemies
@@ -72,7 +71,19 @@ namespace TP2_Kremser_Gaetan
                 if (enemy.getCurrentStructure() > 0)
                 {
                     Console.WriteLine($"\n[{enemy.GetType().Name}] attaque");
-                    enemy.ShootTarget(playerShip);
+                    
+                    // F-18 explodes on contact with player dealing 10 damage
+                    if (enemy is F_18)
+                    {
+                        Console.WriteLine("  [F-18] EXPLOSE au contact et inflige 10 dégâts!");
+                        playerShip.TakeDamages(10);
+                        enemy.setCurrentStructure(0);
+                    }
+                    else
+                    {
+                        enemy.ShootTarget(playerShip);
+                    }
+                    
                     Console.WriteLine($"  Joueur - Bouclier: {playerShip.getCurrentShield():F1} | Structure: {playerShip.getCurrentStructure():F1}");
 
                     if (playerShip.getCurrentStructure() <= 0)
@@ -82,14 +93,31 @@ namespace TP2_Kremser_Gaetan
                 }
             }
 
-            // Player attacks random enemy
+            // Player attacks random enemy with weighted probability
             List<Spaceship> activeEnemies = enemies.Where(s => s.getCurrentStructure() > 0).ToList();
             if (activeEnemies.Count == 0)
             {
                 return;
             }
 
-            Spaceship target = activeEnemies[rand.Next(activeEnemies.Count)];
+            // Weighted random: [1/n, 2/n, 3/n, ...] chance for each position
+            int n = activeEnemies.Count;
+            double totalWeight = n * (n + 1) / 2.0;
+            double randomValue = rand.NextDouble() * totalWeight;
+            double cumulative = 0;
+            int targetIndex = 0;
+            
+            for (int i = 0; i < n; i++)
+            {
+                cumulative += (i + 1);
+                if (randomValue <= cumulative)
+                {
+                    targetIndex = i;
+                    break;
+                }
+            }
+
+            Spaceship target = activeEnemies[targetIndex];
             Console.WriteLine($"\nJoueur tire sur [{target.GetType().Name}]");
             playerShip.ShootTarget(target);
             Console.WriteLine($"  {target.GetType().Name} - Bouclier: {target.getCurrentShield():F1} | Structure: {target.getCurrentStructure():F1}");

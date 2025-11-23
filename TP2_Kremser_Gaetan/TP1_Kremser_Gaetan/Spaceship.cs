@@ -128,7 +128,7 @@ namespace TP2_Kremser_Gaetan
                 currentStructure -= remainingDamages;
             }
         }
-        public void ShootTarget(Spaceship target)
+        public virtual void ShootTarget(Spaceship target)
         {
             double totalDamages = 0;
             foreach (Weapon weapon in SpaceshipWeapons)

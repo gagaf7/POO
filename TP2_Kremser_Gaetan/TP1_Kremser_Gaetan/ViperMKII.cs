@@ -31,5 +31,19 @@ namespace TP2_Kremser_Gaetan
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Missile"));
         }
 
+        public override void ShootTarget(Spaceship target)
+        {
+            // ViperMKII only uses one recharged weapon per turn
+            foreach (Weapon weapon in SpaceshipWeapons)
+            {
+                if (weapon.timeBeforeReload == 0)
+                {
+                    int damage = weapon.Shoot();
+                    target.TakeDamages(damage);
+                    return;
+                }
+            }
+        }
+
     }
 }
