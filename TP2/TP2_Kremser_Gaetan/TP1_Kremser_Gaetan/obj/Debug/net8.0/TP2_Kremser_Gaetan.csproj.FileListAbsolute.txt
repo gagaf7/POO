@@ -1,0 +1,4 @@
+C:\Users\admin\Desktop\cours\POO\TP2\TP2_Kremser_Gaetan\TP1_Kremser_Gaetan\obj\Debug\net8.0\TP2_Kremser_Gaetan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\cours\POO\TP2\TP2_Kremser_Gaetan\TP1_Kremser_Gaetan\obj\Debug\net8.0\TP2_Kremser_Gaetan.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\cours\POO\TP2\TP2_Kremser_Gaetan\TP1_Kremser_Gaetan\obj\Debug\net8.0\TP2_Kremser_Gaetan.AssemblyInfo.cs
+C:\Users\admin\Desktop\cours\POO\TP2\TP2_Kremser_Gaetan\TP1_Kremser_Gaetan\obj\Debug\net8.0\TP2_Kremser_Gaetan.csproj.CoreCompileInputs.cache
