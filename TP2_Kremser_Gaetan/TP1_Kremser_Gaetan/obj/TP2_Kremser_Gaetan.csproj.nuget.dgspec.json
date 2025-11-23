@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\cours\\POO\\TP2\\TP2_Kremser_Gaetan\\TP1_Kremser_Gaetan\\TP2_Kremser_Gaetan.csproj": {}
+    "/home/runner/work/POO/POO/TP2_Kremser_Gaetan/TP1_Kremser_Gaetan/TP2_Kremser_Gaetan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\cours\\POO\\TP2\\TP2_Kremser_Gaetan\\TP1_Kremser_Gaetan\\TP2_Kremser_Gaetan.csproj": {
+    "/home/runner/work/POO/POO/TP2_Kremser_Gaetan/TP1_Kremser_Gaetan/TP2_Kremser_Gaetan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\cours\\POO\\TP2\\TP2_Kremser_Gaetan\\TP1_Kremser_Gaetan\\TP2_Kremser_Gaetan.csproj",
+        "projectUniqueName": "/home/runner/work/POO/POO/TP2_Kremser_Gaetan/TP1_Kremser_Gaetan/TP2_Kremser_Gaetan.csproj",
         "projectName": "TP2_Kremser_Gaetan",
-        "projectPath": "C:\\Users\\admin\\Desktop\\cours\\POO\\TP2\\TP2_Kremser_Gaetan\\TP1_Kremser_Gaetan\\TP2_Kremser_Gaetan.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\cours\\POO\\TP2\\TP2_Kremser_Gaetan\\TP1_Kremser_Gaetan\\obj\\",
+        "projectPath": "/home/runner/work/POO/POO/TP2_Kremser_Gaetan/TP1_Kremser_Gaetan/TP2_Kremser_Gaetan.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/POO/POO/TP2_Kremser_Gaetan/TP1_Kremser_Gaetan/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
