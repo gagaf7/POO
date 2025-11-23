@@ -24,6 +24,8 @@ namespace TP2_Kremser_Gaetan
             name = "Viper MK II";
             maxStructure = 10;
             maxShield = 15;
+            currentStructure = 10;
+            currentShield = 15;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Mitrailleuse"));
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("EMG"));
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Missile"));

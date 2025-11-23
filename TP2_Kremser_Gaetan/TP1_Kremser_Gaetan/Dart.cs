@@ -23,6 +23,8 @@ namespace TP2_Kremser_Gaetan
             name = "Dart";
             maxStructure = 10;
             maxShield = 3;
+            currentStructure = 10;
+            currentShield = 3;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Laser"));
 
         }

@@ -22,6 +22,8 @@ namespace TP2_Kremser_Gaetan
             name = "Rocinante";
             maxStructure = 3;
             maxShield = 5;
+            currentStructure = 3;
+            currentShield = 5;
             SpaceshipWeapons.Add(Armory.GetInstance().GetWeaponByName("Torpille"));
         }
 

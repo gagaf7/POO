@@ -22,6 +22,8 @@ namespace TP2_Kremser_Gaetan
             name = "F-18";
             maxStructure = 15;
             maxShield = 0;
+            currentStructure = 15;
+            currentShield = 0;
         }
         public void UseAbility(List<Spaceship> spaceships)
         {

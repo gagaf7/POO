@@ -22,6 +22,8 @@ namespace TP2_Kremser_Gaetan
             name = "Tardis";
             maxStructure = 1;
             maxShield = 0;
+            currentStructure = 1;
+            currentShield = 0;
             SpaceshipWeapons.Capacity = 0;
         }
         public void UseAbility(List<Spaceship> spaceships)
